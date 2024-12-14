@@ -1,14 +1,16 @@
-import React from 'react';
+import React from "react";
 
-const todos = ['Belajar React Fundamental', 'Ngoding Sampai Bisa'];
+// Di sini tidak menggunakan todos lagi
 
-function ToDoList() {
+// Di sini declare ada props yang ingin digunakan
+function ToDoList(props) {
   return (
-    // Ini namanya Fragment, penahan (seperti div)
     <>
       <h3>Listing ToDo List</h3>
       <ul>
-        {todos.map((todo) => {
+        {/* Di sini kita menggunakan props dengan nama propsTodos */}
+        {/* Hasil lemparan dari App.js */}
+        {props.propsTodos.map((todo) => {
           return <li>{todo}</li>;
         })}
       </ul>

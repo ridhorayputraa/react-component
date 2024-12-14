@@ -1,5 +1,5 @@
 // di sini jadinya harus import useState
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function ToDoIncrement() {
   // sekarang kita menggunakan useState untuk deklarasi increment
@@ -19,7 +19,7 @@ function ToDoIncrement() {
 
   return (
     <>
-      <span style={{ marginRight: '0.25em' }}>{increment}</span>
+      <span style={{ marginRight: "0.25em" }}>{increment}</span>
       <span>
         <button onClick={buttonNambahClickHandler}>Nambah</button>
       </span>
