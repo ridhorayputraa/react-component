@@ -1,0 +1,23 @@
+import React from "react";
+
+let increment = 0;
+
+function ToDoIncrement() {
+  // Kita deklarasi fungsi ketika tombol ditekan
+  function buttonNambahClickHandler() {
+    console.log(increment);
+    increment = increment + 1;
+  }
+
+  return (
+    <>
+      <span style={{ marginRight: "0.25em" }}>{increment}</span>
+      <span>
+        {/* Di sini kita deklarasi onClick untuk menambahkan event ketika tombol diklik */}
+        <button onClick={buttonNambahClickHandler}>Nambah</button>
+      </span>
+    </>
+  );
+}
+
+export default ToDoIncrement;

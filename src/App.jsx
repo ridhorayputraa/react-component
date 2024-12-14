@@ -4,15 +4,20 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import ToDoForm from "./components/ToDoForm";
 import ToDoList from "./components/ToDoList";
+import ToDoIncrement from "./components/ToDoIncrement";
 
 function App() {
   return (
     <>
-      <header>
+       <header>
         <h1>Aplikasi ToDo List</h1>
       </header>
 
-      <section style={{ margin: "1em 0em" }}>
+      <section>
+        <ToDoIncrement />
+      </section>
+
+      <section style={{ margin: '1em 0em' }}>
         <ToDoForm />
         <ToDoList />
       </section>
